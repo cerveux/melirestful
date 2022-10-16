@@ -27,14 +27,14 @@ function App() {
       /* .then((item) => setItem(item)) */;
 
   }
-
+ 
   function busqueda(resultado) {
     fetch(`/api/${resultado}`)
       .then((res) => res.json())
       .then((data) => setData(data));
   };
   
-
+ 
 
   return (
     <div>
